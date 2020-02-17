@@ -1,0 +1,67 @@
+:root {
+  --color-grayscale-base: #6d757c;
+  --color-grayscale-website-background: #fafafa;
+  --color-basic-white: #ffffff;
+  --color-basic-black: #000000;
+}
+
+@font-face {
+  font-family: "LidlFontCondPro";
+  src: url("../fonts/LidlFontCondPro-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "LidlFontCondPro";
+  src: url("../fonts/LidlFontCondPro-Bold.woff.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "LidlFontCondPro";
+  src: url("../fonts/LidlFontCondPro-Semibold.woff.woff") format('woff');
+  font-weight: lighter;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-grayscale-website-background);
+  font-family: LidlFontCondPro;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.nav-bar {
+  background-color: var(--color-grayscale-base);
+}
+
+.nav-bar .top-nav-bar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--color-basic-white);
+}
+
+.nav-bar .top-nav-bar .nav-item {
+  padding-left: 32px;
+}
+
+/**
+ * FLEXBOX
+ */ 
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
