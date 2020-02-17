@@ -102,7 +102,19 @@ ul.bulletless.main {
   border-bottom: 1px solid var(--color-grayscale-lightest);
 }
 
-ul.bulletless li {
+ul.bulletless.main li {
+  font-size: 1.5em;
+  padding-bottom: 16px;
+  padding-right: 24px;
+}
+
+ul.bulletless.main li a.selected {
+  color: var(--color-brand-primary-darker);
+  border-bottom: 4px solid;
+  padding-bottom: 4px;
+}
+
+ul.bulletless.sub li {
   font-size: 1.5em;
   padding-bottom: 16px;
   padding-right: 24px;
@@ -111,6 +123,7 @@ ul.bulletless li {
 ul.bulletless li a.selected {
   color: var(--color-brand-primary-darker);
   border-bottom: 4px solid;
+  padding-bottom: 12px;
 }
 
 .pt-8 {
