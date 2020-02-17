@@ -9,9 +9,9 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <div class="nav-bar">
+  <section class="nav-bar">
     <div class="top-nav-bar">
-      <div class="container d-flex justify-content-between">
+      <div class="container-nav d-flex justify-content-between">
         <div><span>lidl-reisen.de</span></div>
         <div>
           <a class="nav-item">Verantwortung</a> 
@@ -21,11 +21,11 @@
         </div>
       </div>
     </div>
-    <div class="middle-nav-bar container">
+    <div class="middle-nav-bar container-nav">
       <div class="d-flex">
         <input class="search-field" placeholder="Ziel, Hotel, Buchungscode, ...">
           <button class="search-field-button">
-            <img class="search-icon" src="icons/search.png" alt="search" height="24" width="24"/>
+            <img src="icons/search.png" alt="search" height="24" width="24"/>
           </button>
         </input>
       </div>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="bottom-nav-bar">
-      <div class="container">
+      <div class="container-nav">
         <ul class="bulletless main">
           <li><a>Angebote</a></li>
           <li><a>Onlineshop</a></li>
@@ -80,7 +80,29 @@
         </ul>
       </div>
     </div>
-
-  </div>
+    <div class="level-nav-bar container">
+      <img class="home-icon" src="icons/home.png" alt="search" height="16" width="16"/>
+      <div class="level-item">
+        <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
+        <a> Level 1</a>
+      </div>
+      <div class="level-item">
+        <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
+        <a> Level 2</a>
+      </div>
+      <div class="level-item">
+        <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
+        <a> Level 3</a>
+      </div>
+      <div class="level-item selec">
+        <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
+        <a> Level 4</a>
+      </div>
+      <div class="level-item selected">
+        <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
+        <a> Level 5</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

@@ -15,14 +15,14 @@
 }
 
 @font-face {
-  font-family: "LidlFontCondPro";
-  src: url("../fonts/LidlFontCondPro-Bold.woff.woff") format('woff');
+  font-family: "LidlFontCondProBold";
+  src: url("../fonts/LidlFontCondPro-Bold.woff") format('woff');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "LidlFontCondPro";
-  src: url("../fonts/LidlFontCondPro-Semibold.woff.woff") format('woff');
+  font-family: "LidlFontCondProSemibold";
+  src: url("../fonts/LidlFontCondPro-Semibold.woff") format('woff');
   font-weight: lighter;
 }
 
@@ -36,11 +36,22 @@ a {
   cursor: pointer;
 }
 
-.container {
+.container-nav {
   width: 100%;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-bar {
+  background-color: var(--color-basic-white);
 }
 
 .top-nav-bar {
@@ -102,6 +113,10 @@ ul.bulletless.main {
   border-bottom: 1px solid var(--color-grayscale-lightest);
 }
 
+ul.bulletless.sub {
+  margin-bottom: 0px;
+}
+
 ul.bulletless.main li {
   font-size: 1.5em;
   padding-bottom: 16px;
@@ -124,6 +139,25 @@ ul.bulletless li a.selected {
   color: var(--color-brand-primary-darker);
   border-bottom: 4px solid;
   padding-bottom: 12px;
+}
+
+.level-nav-bar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.home-icon {
+  padding-right: 8px;
+}
+
+.level-item {
+  padding-right: 16px;
+}
+
+.level-item.selected {
+  color: var(--color-brand-primary-darker);
+  font-family: LidlFontCondProBold;
 }
 
 .pt-8 {
