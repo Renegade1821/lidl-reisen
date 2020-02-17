@@ -1,9 +1,11 @@
 :root {
   --color-grayscale-base: #6d757c;
+  --color-grayscale-lightest: #eaebec;
   --color-grayscale-website-background: #fafafa;
   --color-basic-white: #ffffff;
   --color-basic-black: #000000;
   --color-brand-primary-base: #0076BF;
+  --color-brand-primary-darker: #06507f;
   --color-brand-primary-darkest: #054066;
 }
 
@@ -28,6 +30,10 @@ body {
   margin: 0;
   background-color: var(--color-grayscale-website-background);
   font-family: LidlFontCondPro;
+}
+
+a {
+  cursor: pointer;
 }
 
 .container {
@@ -79,6 +85,32 @@ body {
 .image-action img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.bottom-nav-bar {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.15)
+}
+
+ul.bulletless {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul.bulletless.main {
+  border-bottom: 1px solid var(--color-grayscale-lightest);
+}
+
+ul.bulletless li {
+  font-size: 1.5em;
+  padding-bottom: 16px;
+  padding-right: 24px;
+}
+
+ul.bulletless li a.selected {
+  color: var(--color-brand-primary-darker);
+  border-bottom: 4px solid;
 }
 
 .pt-8 {
