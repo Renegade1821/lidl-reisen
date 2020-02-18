@@ -177,19 +177,16 @@ ul.bulletless li a.selected {
 }
 
 .search-form-palmes {
-  position: absolute;
-  left: 8%;
-  top: 6%;
+  padding-top: 40px;
 }
 
 .search-form-header-text {
   color: var(--color-basic-white);
-  position: absolute;
   font-size: 56px;
   font-weight: bold;
-  line-height: 1.3em;
-  top: 50%;
-  left: 9%;
+  line-height: 1.4em;
+  display: block;
+  padding-top: 32px;
 }
 
 .search-form-wrapper {
