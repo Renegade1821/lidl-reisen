@@ -160,6 +160,16 @@ ul.bulletless li a.selected {
   font-family: LidlFontCondProBold;
 }
 
+.search-form-background-image {
+  max-height: 850px;
+  height: 850px;
+  background-image: url("./../assets/blank_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
 .pt-8 {
   padding-top: 8px;
 }
