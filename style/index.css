@@ -6,6 +6,7 @@
   --color-basic-black: #000000;
   --color-brand-primary-base: #0076BF;
   --color-brand-primary-darker: #06507f;
+  --color-brand-primary-darkish: #4E5761;
   --color-brand-primary-darkest: #054066;
 }
 
@@ -79,6 +80,7 @@ a {
   padding-bottom: 0px;
   width: 256px;
   padding-left: 16px;
+  border: 1px solid var(--color-basic-black);
 }
 
 .middle-nav-bar .search-field-button {
@@ -160,14 +162,44 @@ ul.bulletless li a.selected {
   font-family: LidlFontCondProBold;
 }
 
+.search-form-section {
+  height: 725px;
+  max-height: 725px;
+}
+
 .search-form-background-image {
-  max-height: 850px;
-  height: 850px;
+  height: 100%;
   background-image: url("./../assets/blank_img.png");
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+}
+
+.search-form-palmes {
+  position: absolute;
+  left: 8%;
+  top: 6%;
+}
+
+.search-form-header-text {
+  color: var(--color-basic-white);
+  position: absolute;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.3em;
+  top: 50%;
+  left: 9%;
+}
+
+.search-form-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background-color: var(--color-brand-primary-darkish);
+  opacity: 0.9;
 }
 
 .pt-8 {
