@@ -24,7 +24,7 @@
     <div class="middle-nav-bar container-nav">
       <div class="d-flex">
         <input class="search-field" placeholder="Ziel, Hotel, Buchungscode, ...">
-          <button class="search-field-button">
+          <button class="gradient search-field-button">
             <img src="icons/search.png" alt="search" height="24" width="24"/>
           </button>
         </input>
@@ -110,9 +110,51 @@
           <img class="search-form-palmes" src="assets/palms.png">
         <span class="search-form-header-text">LAST MINUTE </br> LOREM IPSUM ÜBERSCHRIFT</span>
       </div>
-      <div class="search-form-wrapper">
-        <div class="search-form-input-wrapper"> 
-          
+      <div class="search-form-background">  
+        <div class="container search-form-items-wrapper">
+          <div class="search-form-item-wrapper">
+            <!-- <label for="journeyType" class="search-form-input-header">Reiseart</label>
+            <input #journeyType class="search-form-input" placeholder="Bitte auswählen"/> -->
+            <label for="journeyType" class="search-form-input-header">Reiseart</label>
+            <select #journeyType class="search-form-select">
+              <option 
+                class="search-form-select-option"
+                value="" disabled selected
+                >Bitte auswählen</option>
+              <option value="1" class="search-form-select-option">Urlaub</option>
+            </select>
+          </div>
+          <div class="search-form-item-wrapper">
+            <label for="journeyEnd" class="search-form-input-header">Reiseende</label>
+            <select #journeyEnd class="search-form-select">
+              <option 
+                class="search-form-select-option"
+                value="" disabled
+                >Bitte auswählen</option>
+              <option value="1" selected class="search-form-select-option">2 Erwachsene</option>
+            </select>
+          </div>
+          <div class="search-form-item-wrapper">
+            <label class="search-form-input-header">Reiseziel</label>
+            <input class="search-form-input" placeholder="Land, Region, Ort, Hotel"/>
+          </div>
+          <div class="search-form-item-wrapper">
+            <label for="journeyDuration" class="search-form-input-header">Zeitraum & Dauer</label>
+            <select #journeyDuration class="search-form-select">
+              <option 
+                class="search-form-select-option"
+                value="" disabled selected
+                >Bitte auswählen</option>
+              <option value="1" class="search-form-select-option">7 Tage</option>
+              <option value="2" class="search-form-select-option">14 Tage</option>
+              <option value="3" class="search-form-select-option">21 Tage</option>
+            </select>
+          </div>
+          <div class="search-form-item-wrapper submit-button">
+            <button class="gradient search-form-submit-button">
+              meine reise finden
+            </button>
+          </div>
         </div>
       </div>
     </div>

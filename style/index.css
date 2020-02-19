@@ -1,12 +1,12 @@
 :root {
   --color-grayscale-base: #6d757c;
   --color-grayscale-lightest: #eaebec;
+  --color-grayscale-darkish: #4E5761;
   --color-grayscale-website-background: #fafafa;
   --color-basic-white: #ffffff;
   --color-basic-black: #000000;
   --color-brand-primary-base: #0076BF;
   --color-brand-primary-darker: #06507f;
-  --color-brand-primary-darkish: #4E5761;
   --color-brand-primary-darkest: #054066;
 }
 
@@ -35,6 +35,10 @@ body {
 
 a {
   cursor: pointer;
+}
+
+button.gradient {
+  background-image: linear-gradient(to bottom, var(--color-brand-primary-base) 0%, var(--color-brand-primary-darkest) 100%);
 }
 
 .container-nav {
@@ -76,8 +80,6 @@ a {
 
 .middle-nav-bar .search-field {
   height: 44px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   width: 256px;
   padding-left: 16px;
   border: 1px solid var(--color-basic-black);
@@ -86,7 +88,6 @@ a {
 .middle-nav-bar .search-field-button {
   width: 48px;
   border: 0px;
-  background-image: linear-gradient(to bottom, var(--color-brand-primary-base) 0%, var(--color-brand-primary-darkest) 100%);
 }
 
 .image-action {
@@ -168,6 +169,9 @@ ul.bulletless li a.selected {
 }
 
 .search-form-background-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   background-image: url("./../assets/blank_img.png");
   position: relative;
@@ -182,25 +186,83 @@ ul.bulletless li a.selected {
 
 .search-form-header-text {
   color: var(--color-basic-white);
-  font-size: 56px;
+  font-size: 3.5em;
   font-weight: bold;
   line-height: 1.4em;
   display: block;
   padding-top: 32px;
 }
 
-.search-form-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.search-form-background {
   height: 200px;
-  width: 100%;
-  background-color: var(--color-brand-primary-darkish);
+  background-color: var(--color-grayscale-darkish);
   opacity: 0.9;
+}
+
+.search-form-items-wrapper {
+  display: flex;
+  margin-top: 40px;
+}
+
+.search-form-input-header {
+  color: var(--color-basic-white);
+}
+
+.search-form-item-wrapper {
+  width: calc(18%);
+  margin-right: 24px;
+}
+
+.search-form-select {
+  height: 46px;
+  width: calc(100% + 8px);
+  margin-top: 8px;
+  background-color: var(--color-basic-white);
+  border-radius: 0px;
+  background-image: url("./../icons/chevron-down.svg");
+  background-position: calc(100% - 16px);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  padding-left: 8px;
+  font-size: 1em;
+  /* color: var(--color-brand-primary-base); */  /* ?? */  
+}
+
+.search-form-select-option {
+  background-color: var(--color-basic-white);
+  height: 40px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.search-form-input {
+  height: 40px;
+  width: calc(100% - 16px);
+  margin-top: 8px;
+  padding-left: 16px;
+  font-size: 1em;
+}
+
+.search-form-item-wrapper.submit-button {
+  height: 46px;
+  align-self: flex-end;
+}
+
+.search-form-submit-button {
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  text-transform: uppercase;
+  color: var(--color-basic-white);
+  font-weight: bold;
 }
 
 .pt-8 {
   padding-top: 8px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .d-flex {
