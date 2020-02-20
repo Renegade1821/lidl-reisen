@@ -270,6 +270,11 @@ ul.bulletless li a.selected {
   padding-right: 8px;
 }
 
+.seo-text {
+  text-align: center;
+  margin: 64px 20%;
+}
+
 .pt-8 {
   padding-top: 8px;
 }
