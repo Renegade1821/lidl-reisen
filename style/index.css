@@ -257,6 +257,19 @@ ul.bulletless li a.selected {
   font-weight: bold;
 }
 
+.search-form-more-filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.search-form-more-filters > span {
+  color: var(--color-basic-white);
+  text-decoration: underline;
+  padding-right: 8px;
+}
+
 .pt-8 {
   padding-top: 8px;
 }
