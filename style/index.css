@@ -1,6 +1,7 @@
 :root {
   --color-grayscale-base: #6d757c;
   --color-grayscale-lightest: #eaebec;
+  --color-grayscale-lighter: #D5D8DA;
   --color-grayscale-darkish: #4E5761;
   --color-grayscale-website-background: #fafafa;
   --color-basic-white: #ffffff;
@@ -214,6 +215,8 @@ ul.bulletless li a.selected {
 }
 
 .search-form-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   height: 46px;
   width: calc(100% + 8px);
   margin-top: 8px;
@@ -226,6 +229,10 @@ ul.bulletless li a.selected {
   padding-left: 8px;
   font-size: 1em;
   /* color: var(--color-brand-primary-base); */  /* ?? */  
+}
+
+.search-form-select::-ms-expand {
+  display: none
 }
 
 .search-form-select-option {
@@ -272,7 +279,44 @@ ul.bulletless li a.selected {
 
 .seo-text {
   text-align: center;
-  margin: 64px 20%;
+  margin: 0 20%;
+  margin-top: 64px;
+}
+
+.section-header-wrapper {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+.section-header {
+  position: relative;
+  display: inline-block;
+  max-width: 26em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.section-header::before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid var(--color-grayscale-lighter);
+  left: -40vw;
+  right: calc(100% + 24px);
+  bottom: 2px;
+}
+
+.section-header::after {
+  position: absolute;
+  content: "";
+  border-top: 2px solid var(--color-grayscale-lighter);
+  right: -40vw;
+  left: calc(100% + 24px);
+  bottom: 2px;
 }
 
 .pt-8 {
