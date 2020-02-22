@@ -42,20 +42,6 @@ button.gradient {
   background-image: linear-gradient(to bottom, var(--color-brand-primary-base) 0%, var(--color-brand-primary-darkest) 100%);
 }
 
-.container-nav {
-  width: 100%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .nav-bar {
   background-color: var(--color-basic-white);
 }
@@ -317,6 +303,90 @@ ul.bulletless li a.selected {
   right: -40vw;
   left: calc(100% + 24px);
   bottom: 2px;
+}
+
+.product-teasers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-teaser-wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  max-width: calc(100% - 16px);
+  height: 700px;
+  padding: 8px;
+}
+
+.product-teaser {
+  position: relative;
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  background-color: antiquewhite;
+  border-radius: 2px;
+  color: #353b42;
+  
+}
+
+.product-teaser-button {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 100%;
+  background-color: var(--color-brand-primary-base);
+}
+
+.product-teaser-button > span {
+  color: var(--color-basic-white);
+  text-decoration: underline;
+  height: fit-content;
+  width: fit-content;
+  margin-right: 8px;
+}
+
+@media (max-width: 583px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-display {
+    display: block;
+  }
+}
+
+@media (min-width: 584px) {
+  .product-teaser-wrapper {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    max-width: calc(50% - 16px);
+    height: 700px;
+  }
+}
+
+@media (min-width: 944px) {
+  .container-nav {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-teaser-wrapper {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.333%;
+    max-width: calc(33.333% - 16px);
+    height: 700px;
+  }
 }
 
 .pt-8 {

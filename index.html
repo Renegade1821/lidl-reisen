@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <section #nav-bar class="nav-bar">
+  <section #nav-bar class="nav-bar mobile-hidden">
     <div class="top-nav-bar">
       <div class="container-nav d-flex justify-content-between">
         <div><span>lidl-reisen.de</span></div>
@@ -107,10 +107,10 @@
   <section #searchForm class="search-form-section">
     <div class="search-form-background-image">
       <div class="container">
-          <img class="search-form-palmes" src="assets/palms.png">
+        <img class="search-form-palmes" src="assets/palms.png">
         <span class="search-form-header-text">LAST MINUTE </br> LOREM IPSUM ÜBERSCHRIFT</span>
       </div>
-      <div class="search-form-background">  
+      <div class="search-form-background mobile-hidden">  
         <div class="container search-form-items-wrapper">
           <div class="search-form-item-wrapper">
             <!-- <label for="journeyType" class="search-form-input-header">Reiseart</label>
@@ -161,7 +161,7 @@
       </div>
     </div>
   </section>
-  <section #seo-text  class="seo-text">
+  <section class="seo-text">
     <p>
       1. Absatz des SEO-Text: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
@@ -170,6 +170,30 @@
     <div class="section-header-wrapper">
       <h2 class="section-header">lorem ipsum Produktteaser</h1>
     </div>
+  </section>
+  <section class="product-teasers">
+    <div class="container foo">
+      <div class="product-teasers-wrapper">
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+            <button class="product-teaser-button">
+              <span class="product-teaser-button">Link zur SEL</span>
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </button>
+          </article>
+        </div>
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+
+          </article>
+        </div>
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+
+          </article>
+        </div>
+      </div>
+    </div> 
   </section>
 </body>
 </html>
