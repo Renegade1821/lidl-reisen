@@ -281,7 +281,7 @@ ul.bulletless li a.selected {
   position: relative;
   display: inline-block;
   max-width: 26em;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -326,23 +326,58 @@ ul.bulletless li a.selected {
   background-color: antiquewhite;
   border-radius: 2px;
   color: #353b42;
-  
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .product-teaser-button {
-  display: flex;
-  justify-content: center;
   height: 48px;
   width: 100%;
   background-color: var(--color-brand-primary-base);
+  margin-bottom: 16px;
+  border-radius: 2px 2px 0px 0px;
 }
 
 .product-teaser-button > span {
   color: var(--color-basic-white);
   text-decoration: underline;
-  height: fit-content;
-  width: fit-content;
-  margin-right: 8px;
+  font-size: 1.5em;
+  margin-right: 16px;
+  margin-bottom: 0px;
+}
+
+.product-teaser-button > img {
+  position: relative;
+  top: 3px;
+}
+
+.product-teaser-image { 
+  margin-bottom: 32px;
+}
+
+.product-teaser-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.product-teaser-body-header {
+  display: block;
+  line-height: 0.625;
+  font-size: 1.3em;
+  letter-spacing: -0.3;
+  margin-bottom: 16px;;
+}
+
+.product-teaser-body-sub-header {
+  font-size: 1em;
+}
+
+.product-teaser-body-header-stars {
+  font-size: 0.625em;
+  position: relative;
+  bottom: 6px;
 }
 
 @media (max-width: 583px) {
