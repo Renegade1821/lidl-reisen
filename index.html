@@ -113,8 +113,6 @@
       <div class="search-form-background mobile-hidden">  
         <div class="container search-form-items-wrapper">
           <div class="search-form-item-wrapper">
-            <!-- <label for="journeyType" class="search-form-input-header">Reiseart</label>
-            <input #journeyType class="search-form-input" placeholder="Bitte auswählen"/> -->
             <label for="journeyType" class="search-form-input-header">Reiseart</label>
             <select #journeyType class="search-form-select">
               <option 
@@ -166,9 +164,9 @@
       1. Absatz des SEO-Text: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
   </section>
-  <section>
+  <section class="container">
     <div class="section-header-wrapper">
-      <h2 class="section-header">lorem ipsum Produktteaser</h1>
+      <h2 class="section-header">lorem ipsum Produktteaser</h2>
     </div>
   </section>
   <section class="product-teasers">
@@ -199,28 +197,270 @@
                     <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
                     <img class="sun-rating-icon" src="icons/holidaycheck-sun-06.svg" alt="sun-rating-10"/>
                   </div>
-                  <span>5,6<span style="font-size: 0.6em;">/6</span>
+                  <span class="holiday-check-rating-score">5,6<span>/6</span>
                 </div>
                 </span>
               </div>
-              <div class="product-teaser-price">
-
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">299</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
               </div>
             </div>
           </article>
         </div>
         <div class="product-teaser-wrapper">
           <article class="product-teaser">
-
+            <a class="product-teaser-button">Link zur SEL
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </a>
+            <img class="product-teaser-image" src="assets/example_4x3.png" alt="vacation" width="100%">
+            <div class="product-teaser-body">
+              <div class="mb-32">
+                <span class="product-teaser-body-header">
+                  Lorem ipsum dolor sit amet
+                  <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                </span>
+                <span class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</span>
+              </div>
+              <div class="holiday-check-rating mb-40">
+                <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
+                <div class="sun-rating-wrapper">
+                  <div class="sun-rating-icons-wrapper">
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-02.svg" alt="sun-rating-10"/>
+                  </div>
+                  <span class="holiday-check-rating-score">5,2<span>/6</span>
+                </div>
+                </span>
+              </div>
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">899</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
+              </div>
+            </div>
           </article>
         </div>
         <div class="product-teaser-wrapper">
           <article class="product-teaser">
-
+            <a class="product-teaser-button">Link zur SEL
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </a>
+            <img class="product-teaser-image" src="assets/example_4x3.png" alt="vacation" width="100%">
+            <div class="product-teaser-body">
+              <div class="mb-32">
+                <span class="product-teaser-body-header">
+                  Lorem ipsum dolor sit amet
+                  <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                </span>
+                <span class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</span>
+              </div>
+              <div class="holiday-check-rating mb-40">
+                <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
+                <div class="sun-rating-wrapper">
+                  <div class="sun-rating-icons-wrapper">
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-08.svg" alt="sun-rating-10"/>
+                  </div>
+                  <span class="holiday-check-rating-score">5,8<span>/6</span>
+                </div>
+                </span>
+              </div>
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">499</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+            <a class="product-teaser-button">Link zur SEL
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </a>
+            <img class="product-teaser-image" src="assets/example_4x3.png" alt="vacation" width="100%">
+            <div class="product-teaser-body">
+              <div class="mb-32">
+                <span class="product-teaser-body-header">
+                  Lorem ipsum dolor sit amet
+                  <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                </span>
+                <span class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</span>
+              </div>
+              <div class="holiday-check-rating mb-40">
+                <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
+                <div class="sun-rating-wrapper">
+                  <div class="sun-rating-icons-wrapper">
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-08.svg" alt="sun-rating-10"/>
+                  </div>
+                  <span class="holiday-check-rating-score">5,8<span>/6</span>
+                </div>
+                </span>
+              </div>
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">499</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+            <a class="product-teaser-button">Link zur SEL
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </a>
+            <img class="product-teaser-image" src="assets/example_4x3.png" alt="vacation" width="100%">
+            <div class="product-teaser-body">
+              <div class="mb-32">
+                <span class="product-teaser-body-header">
+                  Lorem ipsum dolor sit amet
+                  <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                </span>
+                <span class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</span>
+              </div>
+              <div class="holiday-check-rating mb-40">
+                <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
+                <div class="sun-rating-wrapper">
+                  <div class="sun-rating-icons-wrapper">
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-08.svg" alt="sun-rating-10"/>
+                  </div>
+                  <span class="holiday-check-rating-score">5,8<span>/6</span>
+                </div>
+                </span>
+              </div>
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">499</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="product-teaser-wrapper">
+          <article class="product-teaser">
+            <a class="product-teaser-button">Link zur SEL
+              <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
+            </a>
+            <img class="product-teaser-image" src="assets/example_4x3.png" alt="vacation" width="100%">
+            <div class="product-teaser-body">
+              <div class="mb-32">
+                <span class="product-teaser-body-header">
+                  Lorem ipsum dolor sit amet
+                  <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                </span>
+                <span class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</span>
+              </div>
+              <div class="holiday-check-rating mb-40">
+                <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
+                <div class="sun-rating-wrapper">
+                  <div class="sun-rating-icons-wrapper">
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-10.svg" alt="sun-rating-10"/>
+                    <img class="sun-rating-icon" src="icons/holidaycheck-sun-08.svg" alt="sun-rating-10"/>
+                  </div>
+                  <span class="holiday-check-rating-score">5,8<span>/6</span>
+                </div>
+                </span>
+              </div>
+              <div class="product-teaser-price-wrapper mb-8">
+                <div class="product-teaser-price">
+                  <div style="display: flex; justify-content: center;">
+                    <div style="width: auto;">
+                      <span>ab</span>
+                      <span class="product-teaser-price-text">499</span>
+                      <span>EUR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TODO NAME THIS SECTION PROPERLY AND MOVE STYLE TO CSS AFTERWARD-->
+              <div style="width: 100; display: flex; justify-content: flex-end;">
+                <span style="font-size: 0.875em;"> Lorem ipsum / Lorem ipsum</span>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </div> 
+  </section>
+  <section class="container">
+    <div class="section-header-wrapper">
+      <h2 class="section-header">lorem ipsum Kategorieteaser</h2>
+    </div>
   </section>
 </body>
 </html>
