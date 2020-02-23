@@ -55,6 +55,51 @@
         ],
       });
     });   
+
+    $(document).ready(() => {
+      $('.foo').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipe: true,
+        swipeToSlide: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left.svg" alt="previous" height="20" width="20"/></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right.svg" alt="next" height="20" width="20"/></button>',
+        responsive: [
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 944,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 584,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+        ],
+      });
+    });   
   </script>
 
   <title>Document</title>
@@ -229,14 +274,14 @@
             <a class="product-teaser-button">Link zur SEL
               <img src="icons/chevron-right-white.svg" alt="search" height="16" width="16"/>
             </a>
-            <img class="product-teaser-image" src="assets/product/product_teaser_03.jpg" alt="product_teaser_03">
+            <img class="product-teaser-image" src="assets/product/product_teaser_01.jpg" alt="product_teaser_01">
             <div class="product-teaser-body">
               <div class="mb-32">
                 <span class="product-teaser-body-header">Lorem ipsum dolor sit amet</span>
                 <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                 <div class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</div>
               </div>
-              <div class="holiday-check-rating mobile-hidden mb-40">
+              <div class="holiday-check-rating mobile-hidden">
                 <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                 <div class="sun-rating-wrapper">
                   <div class="sun-rating-icons-wrapper">
@@ -250,7 +295,7 @@
                 </div>
                 <span class="holiday-check-rating-score">5,8<span>/6</span>
               </div>
-              <div class="holiday-check-rating desktop-hidden mb-40">
+              <div class="holiday-check-rating desktop-hidden">
                 <div class="holiday-check-rating-wrapper">
                   <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                   <span class="holiday-check-rating-score">5,6<span>/6</span>
@@ -269,7 +314,7 @@
               <div class="product-teaser-price-wrapper mb-8">
                 <div class="product-teaser-price">
                   <div style="display: flex; justify-content: center;">
-                    <div style="width: auto;">
+                    <div>
                       <span>ab</span>
                       <span class="product-teaser-price-text">299</span>
                       <span>EUR</span>
@@ -296,7 +341,7 @@
                 <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                 <div class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</div>
               </div>
-              <div class="holiday-check-rating mobile-hidden mb-40">
+              <div class="holiday-check-rating mobile-hidden">
                 <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                 <div class="sun-rating-wrapper">
                   <div class="sun-rating-icons-wrapper">
@@ -310,7 +355,7 @@
                 </div>
                 <span class="holiday-check-rating-score">5,8<span>/6</span>
               </div>
-              <div class="holiday-check-rating desktop-hidden mb-40">
+              <div class="holiday-check-rating desktop-hidden">
                 <div class="holiday-check-rating-wrapper">
                   <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                   <span class="holiday-check-rating-score">5,2<span>/6</span>
@@ -329,7 +374,7 @@
               <div class="product-teaser-price-wrapper mb-8">
                 <div class="product-teaser-price">
                   <div style="display: flex; justify-content: center;">
-                    <div style="width: auto;">
+                    <div>
                       <span>ab</span>
                       <span class="product-teaser-price-text">899</span>
                       <span>EUR</span>
@@ -356,7 +401,7 @@
                 <span class="product-teaser-body-header-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
                 <div class="product-teaser-body-sub-header">Lorem ipsum dolor sit amet</div>
               </div>
-              <div class="holiday-check-rating mobile-hidden mb-40">
+              <div class="holiday-check-rating mobile-hidden">
                 <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                 <div class="sun-rating-wrapper">
                   <div class="sun-rating-icons-wrapper">
@@ -370,7 +415,7 @@
                 </div>
                 <span class="holiday-check-rating-score">5,8<span>/6</span>
               </div>
-              <div class="holiday-check-rating desktop-hidden mb-40">
+              <div class="holiday-check-rating desktop-hidden">
                 <div class="holiday-check-rating-wrapper">
                   <img class="holiday-check-logo" src="icons/holidaycheck-logo.svg" alt="holiday-check-logo"/>
                   <span class="holiday-check-rating-score">5,8<span>/6</span>
@@ -389,7 +434,7 @@
               <div class="product-teaser-price-wrapper mb-8">
                 <div class="product-teaser-price">
                   <div style="display: flex; justify-content: center;">
-                    <div style="width: auto;">
+                    <div>
                       <span>ab</span>
                       <span class="product-teaser-price-text">499</span>
                       <span>EUR</span>
@@ -452,60 +497,101 @@
     </div>
   </section>
   <section class="mb-128">
-    <div class="container">
+    <div class="container mobile-hidden">
       <div class="further-teasers-wrapper">
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser one">
             <div class="further-product-teaser-title">Lorem Ipsum 1</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_01.jpg" alt="further_teaser_01" width="100%">
+            <!-- <img class="product-teaser-image" src="assets/further_teasers/further_teasers_01.jpg" alt="further_teaser_01" width="100%"> -->
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser two">
             <div class="further-product-teaser-title">Lorem Ipsum 2</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_02.jpg" alt="further_teaser_02" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser three">
             <div class="further-product-teaser-title">Lorem Ipsum 3</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_03.jpg" alt="further_teaser_03" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser four">
             <div class="further-product-teaser-title">Lorem Ipsum 4</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_04.jpg" alt="further_teaser_04" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser five">
             <div class="further-product-teaser-title">Lorem Ipsum 5</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_05.jpg" alt="further_teaser_05" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser six">
             <div class="further-product-teaser-title">Lorem Ipsum 6</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_06.jpg" alt="further_teaser_06" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser seven">
             <div class="further-product-teaser-title">Lorem Ipsum 7</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_07.jpg" alt="further_teaser_07" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser eight">
             <div class="further-product-teaser-title">Lorem Ipsum 8</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_08.jpg" alt="further_teaser_08" width="100%">
           </article>
         </div>
         <div class="further-teaser-wrapper">
-          <article class="further-product-teaser">
+          <article class="further-product-teaser nine">
             <div class="further-product-teaser-title">Lorem Ipsum 9</div>
-            <img class="product-teaser-image" src="assets/further_teasers/further_teasers_09.jpg" alt="further_teaser_09" width="100%">
+          </article>
+        </div>
+      </div>
+    </div> 
+    <div class="container desktop-hidden">
+      <div class="foo">
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser one">
+            <div class="further-product-teaser-title">Lorem Ipsum 1</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser two">
+            <div class="further-product-teaser-title">Lorem Ipsum 2</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser three">
+            <div class="further-product-teaser-title">Lorem Ipsum 3</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser four">
+            <div class="further-product-teaser-title">Lorem Ipsum 4</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser five">
+            <div class="further-product-teaser-title">Lorem Ipsum 5</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser six">
+            <div class="further-product-teaser-title">Lorem Ipsum 6</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser seven">
+            <div class="further-product-teaser-title">Lorem Ipsum 7</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser eight">
+            <div class="further-product-teaser-title">Lorem Ipsum 8</div>
+          </article>
+        </div>
+        <div class="further-teaser-wrapper">
+          <article class="further-product-teaser nine">
+            <div class="further-product-teaser-title">Lorem Ipsum 9</div>
           </article>
         </div>
       </div>
