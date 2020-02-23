@@ -34,7 +34,11 @@ body {
   font-family: LidlFontCondPro;
 }
 
-a {
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
   cursor: pointer;
 }
 
@@ -332,8 +336,9 @@ ul.bulletless li a.selected {
   flex-shrink: 0;
   flex-basis: 100%;
   max-width: calc(100% - 16px);
-  padding: 4px;
+  padding: 8px;
   height: 670px;
+  max-height: 670px;
 }
 
 @media (max-width: 583px) {
@@ -349,14 +354,14 @@ ul.bulletless li a.selected {
 @media (min-width: 584px) {
   .product-teaser-wrapper {
     flex-basis: 50%;
-    max-width: calc(50% - 8px);
+    max-width: calc(50% - 16px);
   }
 }
 
 @media (min-width: 944px) {
   .product-teaser-wrapper {
     flex-basis: 33.333%;
-    max-width: calc(33.333% - 8px);
+    max-width: calc(33.333% - 16px);
   }
 }
 
@@ -470,6 +475,47 @@ ul.bulletless li a.selected {
 
 .product-teaser-price-text {
   font-size: 3.5em;
+}
+
+.category-teaser-slide-wrapper {
+  padding: 8px;
+  height: 600px;
+}
+
+.category-teaser-slide {
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  background-image: url("../assets/big_blank_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SLICK */
+
+.slick-prev,
+.slick-next
+{
+    font-size: 1em;
+    width: 32px;
+    height: 64px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
+    background-color: var(--color-basic-white);
+    color: black;
+}
+
+.slick-prev {
+  left: -5%;
+}
+
+.slick-next {
+  right: -5%;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 0px; /* removes weird space above chevrons */
+    line-height: 0; /* removes weird space above chevrons */
 }
 
 .pt-8 {

@@ -3,8 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" type="text/css" href="style/index.css">
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.category-teaser-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipe: true,
+        swipeToSlide: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left.svg" alt="previous" height="20" width="20"/></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right.svg" alt="next" height="20" width="20"/></button>',
+        responsive: [
+          {
+            breakpoint: 944,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 584,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          },
+        ]
+      })
+    });
+
+  </script>
+
   <title>Document</title>
 </head>
 <body>
@@ -460,6 +499,28 @@
   <section class="container">
     <div class="section-header-wrapper">
       <h2 class="section-header">lorem ipsum Kategorieteaser</h2>
+    </div>
+  </section>
+  <section class="container mb-32">
+    <div class="category-teaser-slider">
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
+      <div class="category-teaser-slide-wrapper">
+        <div class="category-teaser-slide"></div>
+      </div>
     </div>
   </section>
 </body>
