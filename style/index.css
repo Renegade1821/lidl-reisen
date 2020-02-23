@@ -294,9 +294,9 @@ ul.bulletless li a.selected {
   display: block;
   overflow: hidden;
   text-align: center;
-  margin-top: 64px;
   margin-bottom: 16px;
   margin-right: 8px;
+  margin-left: 8px;
 }
 
 .section-header {
@@ -327,11 +327,13 @@ ul.bulletless li a.selected {
   bottom: 2px;
 }
 
+.further-teasers-wrapper,
 .product-teasers-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
+.further-teaser-wrapper,
 .product-teaser-wrapper {
   flex-grow: 0;
   flex-shrink: 0;
@@ -340,6 +342,20 @@ ul.bulletless li a.selected {
   padding: 8px;
   height: 670px;
   max-height: 670px;
+}
+
+.further-teaser-wrapper {
+  height: 290px;
+  padding-top: 0px;
+  padding-bottom: 32px;
+}
+
+.further-product-teaser {
+  height: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  background-image: url("../assets/example_4x3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 583px) {
@@ -353,6 +369,7 @@ ul.bulletless li a.selected {
 }
 
 @media (min-width: 584px) {
+  .further-teaser-wrapper,
   .product-teaser-wrapper {
     flex-basis: 50%;
     max-width: calc(50% - 16px);
@@ -360,6 +377,7 @@ ul.bulletless li a.selected {
 }
 
 @media (min-width: 944px) {
+  .further-teaser-wrapper,
   .product-teaser-wrapper {
     flex-basis: 33.333%;
     max-width: calc(33.333% - 16px);
@@ -370,9 +388,6 @@ ul.bulletless li a.selected {
   height: 100%;
   box-shadow: 0 2px 4px rgba(0,0,0,.15);
   color: #353b42;
-  /* background-image: url("../assets/teaser-example.png"); */
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .product-teaser-button {
@@ -491,6 +506,7 @@ ul.bulletless li a.selected {
   background-size: cover;
 }
 
+.further-product-teaser-title,
 .category-teaser-slide-title {
   display: flex;
   align-items: center;
@@ -502,17 +518,21 @@ ul.bulletless li a.selected {
   font-size: 1.2rem;
 }
 
+.further-product-teaser-title {
+  top: calc(290px - 32px - 64px);
+}
+
 /* SLICK */
 
 .slick-prev,
 .slick-next
 {
-    font-size: 1rem;
-    width: 32px;
-    height: 64px;
-    box-shadow: 0 4px 4px rgba(0,0,0,.15);
-    background-color: var(--color-basic-white);
-    color: black;
+  font-size: 1rem;
+  width: 32px;
+  height: 64px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.15);
+  background-color: var(--color-basic-white);
+  color: black;
 }
 
 .slick-prev {
@@ -556,6 +576,13 @@ ul.bulletless li a.selected {
   margin-bottom: 40px;
 }
 
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-128 {
+  margin-bottom: 128px;
+}
 .w-100 {
   width: 100%;
 }
