@@ -1,5 +1,6 @@
 :root {
   --color-grayscale-base: #6d757c;
+  --color-grayscale-superlight: #F2F3F4;
   --color-grayscale-lightest: #eaebec;
   --color-grayscale-lighter: #D5D8DA;
   --color-grayscale-darkish: #4E5761;
@@ -490,6 +491,13 @@ ul.bulletless li a.selected {
   background-size: cover;
 }
 
+.category-teaser-slide-title {
+  position: absolute;
+  bottom: 32px;
+  height: 64px;
+  background-color: var(--color-grayscale-superlight);
+}
+
 /* SLICK */
 
 .slick-prev,
@@ -504,11 +512,11 @@ ul.bulletless li a.selected {
 }
 
 .slick-prev {
-  left: -5%;
+  left: -3%;
 }
 
 .slick-next {
-  right: -5%;
+  right: -3%;
 }
 
 .slick-prev:before,
