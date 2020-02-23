@@ -1,3 +1,5 @@
+@import "./product-and-further-teasers.css";
+
 :root {
   --color-grayscale-base: #6d757c;
   --color-grayscale-superlight: #F2F3F4;
@@ -30,6 +32,22 @@
   font-weight: lighter;
 }
 
+@media (max-width: 583px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .mobile-display {
+    display: block;
+  }
+}
+
+@media (min-width: 584px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
   background-color: var(--color-grayscale-website-background);
@@ -38,6 +56,10 @@ body {
 
 a:hover {
   cursor: pointer;
+}
+
+button {
+  height: 48px !important;
 }
 
 button:hover {
@@ -234,7 +256,7 @@ ul.bulletless li a.selected {
   background-position: calc(100% - 16px);
   background-size: 16px;
   background-repeat: no-repeat;
-  padding-left: 8px;
+  padding-left: 16px;
   font-size: 1rem;
   /* color: var(--color-brand-primary-base); */  /* ?? how to highlight selected state?*/  
 }
@@ -327,170 +349,6 @@ ul.bulletless li a.selected {
   right: -100vw;
   left: calc(100% + 24px);
   bottom: 2px;
-}
-
-.further-teasers-wrapper,
-.product-teasers-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.further-teaser-wrapper,
-.product-teaser-wrapper {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 100%;
-  max-width: calc(100% - 16px);
-  padding: 8px;
-  height: 670px;
-  max-height: 670px;
-}
-
-.further-teaser-wrapper {
-  height: 290px;
-  padding-top: 0px;
-  padding-bottom: 32px;
-}
-
-.further-product-teaser {
-  height: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
-}
-
-@media (max-width: 583px) {
-  .mobile-hidden {
-    display: none;
-  }
-
-  .mobile-display {
-    display: block;
-  }
-}
-
-@media (min-width: 584px) {
-  .further-teaser-wrapper,
-  .product-teaser-wrapper {
-    flex-basis: 50%;
-    max-width: calc(50% - 16px);
-  }
-}
-
-@media (min-width: 944px) {
-  .further-teaser-wrapper,
-  .product-teaser-wrapper {
-    flex-basis: 33.333%;
-    max-width: calc(33.333% - 16px);
-  }
-}
-
-.product-teaser {
-  height: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
-  color: #353b42;
-}
-
-.product-teaser-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  width: 100%;
-  background-color: var(--color-brand-primary-base);
-  color: var(--color-basic-white);
-  text-decoration: underline;
-  font-size: 1.2rem;
-  margin-bottom: 16px;
-}
-
-.product-teaser-button > img {
-  margin-left: 16px;
-}
-
-.product-teaser-image { 
-  margin-bottom: 32px;
-  width: 100%;
-}
-
-.product-teaser-body {
-  flex-direction: column;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.product-teaser-body-header {
-  display: block;
-  line-height: 0.625;
-  font-size: 1.3rem;
-  letter-spacing: -0.3;
-  margin-bottom: 16px;;
-}
-
-.product-teaser-body-sub-header {
-  font-size: 1rem;
-}
-
-.product-teaser-body-header-stars {
-  font-size: 0.625rem;
-  position: relative;
-  bottom: 6px;
-}
-
-.holiday-check-rating {
-  display: flex;
-  padding: 16px 0px;
-  border-bottom: 1px solid var(--color-grayscale-lighter);
-  border-top: 1px solid var(--color-grayscale-lighter);
-}
-
-.holiday-check-rating-score {
-  font-size: 1.2rem;
-  font-family: LidlFontCondProBold;
-}
-
-.holiday-check-rating-score > span {
-  font-size: 0.6rem;
-}
-
-.holiday-check-logo {
-  height: 19px;
-  width: 76px;
-  position: relative;
-  top: 1px;
-  margin-right: 16px;
-}
-
-.sun-rating-wrapper {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-}
-
-.sun-rating-icons-wrapper {
-  display: flex;
-  padding-left: 3px;
-}
-
-.sun-rating-icon {
-  padding-right: 8px;
-  height: 24px;
-  width: 24px;
-}
-
-.product-teaser-price-wrapper {
-  height: 64px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.product-teaser-price {
-  height: 100%;
-  padding: 0 24px;
-  font-family: LidlFontCondProBold;
-  border: 1px solid var(--color-grayscale-lighter);
-}
-
-.product-teaser-price-text {
-  font-size: 3.5rem;
 }
 
 .category-teaser-slide-wrapper {
