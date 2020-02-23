@@ -129,7 +129,7 @@ ul.bulletless.sub {
 }
 
 ul.bulletless.main li {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding-bottom: 16px;
   padding-right: 24px;
 }
@@ -141,7 +141,7 @@ ul.bulletless.main li a.selected {
 }
 
 ul.bulletless.sub li {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding-bottom: 16px;
   padding-right: 24px;
 }
@@ -194,9 +194,9 @@ ul.bulletless li a.selected {
 
 .search-form-header-text {
   color: var(--color-basic-white);
-  font-size: 3.5em;
+  font-size: 3.5rem;
   font-weight: bold;
-  line-height: 1.4em;
+  line-height: 1.4rem;
   display: block;
   padding-top: 32px;
 }
@@ -234,7 +234,7 @@ ul.bulletless li a.selected {
   background-size: 16px;
   background-repeat: no-repeat;
   padding-left: 8px;
-  font-size: 1em;
+  font-size: 1rem;
   /* color: var(--color-brand-primary-base); */  /* ?? how to highlight selected state?*/  
 }
 
@@ -254,7 +254,7 @@ ul.bulletless li a.selected {
   width: calc(100% - 16px);
   margin-top: 8px;
   padding-left: 16px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .search-form-item-wrapper.submit-button {
@@ -302,8 +302,8 @@ ul.bulletless li a.selected {
 .section-header {
   position: relative;
   display: inline-block;
-  max-width: 26em;
-  font-size: 1.25em;
+  max-width: 26rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
@@ -384,7 +384,7 @@ ul.bulletless li a.selected {
   background-color: var(--color-brand-primary-base);
   color: var(--color-basic-white);
   text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-bottom: 16px;
 }
 
@@ -405,17 +405,17 @@ ul.bulletless li a.selected {
 .product-teaser-body-header {
   display: block;
   line-height: 0.625;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   letter-spacing: -0.3;
   margin-bottom: 16px;;
 }
 
 .product-teaser-body-sub-header {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .product-teaser-body-header-stars {
-  font-size: 0.625em;
+  font-size: 0.625rem;
   position: relative;
   bottom: 6px;
 }
@@ -428,12 +428,12 @@ ul.bulletless li a.selected {
 }
 
 .holiday-check-rating-score {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-family: LidlFontCondProBold;
 }
 
 .holiday-check-rating-score > span {
-  font-size: 0.6em;
+  font-size: 0.6rem;
 }
 
 .holiday-check-logo {
@@ -475,7 +475,7 @@ ul.bulletless li a.selected {
 }
 
 .product-teaser-price-text {
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 .category-teaser-slide-wrapper {
@@ -492,10 +492,14 @@ ul.bulletless li a.selected {
 }
 
 .category-teaser-slide-title {
-  position: absolute;
-  bottom: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: calc(600px - 32px - 64px);
   height: 64px;
   background-color: var(--color-grayscale-superlight);
+  padding-left: 16px;
+  font-size: 1.2rem;
 }
 
 /* SLICK */
@@ -503,7 +507,7 @@ ul.bulletless li a.selected {
 .slick-prev,
 .slick-next
 {
-    font-size: 1em;
+    font-size: 1rem;
     width: 32px;
     height: 64px;
     box-shadow: 0 4px 4px rgba(0,0,0,.15);
@@ -525,6 +529,16 @@ ul.bulletless li a.selected {
     font-size: 0px; /* removes weird space above chevrons */
     line-height: 0; /* removes weird space above chevrons */
 }
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--color-brand-primary-base);
+}
+
+/* GENERAL */
 
 .pt-8 {
   padding-top: 8px;

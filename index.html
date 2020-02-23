@@ -12,54 +12,49 @@
 
   <script>
     $(document).ready(() => {
-      // category-teaser-slider
-      $.when($('.category-teaser-slider').slick({
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          swipe: true,
-          swipeToSlide: true,
-          arrows: true,
-          prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left.svg" alt="previous" height="20" width="20"/></button>',
-          nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right.svg" alt="next" height="20" width="20"/></button>',
-          responsive: [
-            {
-              breakpoint: 1250,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: false,
-                dots: true,
-              }
-            },
-            {
-              breakpoint: 944,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: false,
-                dots: true,
-              }
-            },
-            {
-              breakpoint: 584,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: false,
-                dots: true,
-              }
-            },
-          ]
-        }))
-        // resize category-teaser-slider title to fit in its container
-        .then(() => $(window).resize($('.category-teaser-slide-title').width($('.category-teaser-slide').width())).resize());
-    });
-
-   
+      $('.category-teaser-slider').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipe: true,
+        swipeToSlide: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left.svg" alt="previous" height="20" width="20"/></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right.svg" alt="next" height="20" width="20"/></button>',
+        responsive: [
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 944,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 584,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              dots: true,
+            }
+          },
+        ],
+      });
+    });   
   </script>
 
   <title>Document</title>
@@ -523,32 +518,32 @@
     <div class="container category-teaser-slider">
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">1</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 1</div>
         </div>
       </div>
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">2</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 2</div>
         </div>
       </div>
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">3</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 3</div>
         </div>
       </div>
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">4</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 4</div>
         </div>
       </div>
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">5</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 5</div>
         </div>
       </div>
       <div class="category-teaser-slide-wrapper">
         <div class="category-teaser-slide">
-          <span class="category-teaser-slide-title">6</span>
+          <div class="category-teaser-slide-title">Lorem Ipsum 6</div>
         </div>
       </div>
     </div>
