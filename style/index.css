@@ -89,9 +89,7 @@ button.gradient {
 }
 
 .lidl-icon-desktop {
-  position: absolute;
-  top: 8px;
-  padding-left: calc(32px + ((100vw - 32px - 1280px) / 2));
+  margin-top: -1.5rem;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.15);
 }
 
@@ -122,7 +120,7 @@ button.gradient {
   align-items: center;
   background-color: var(--color-grayscale-base);
   color: var(--color-basic-white);
-  padding-left: 200px;
+  padding-left: 16px;
   padding-right: 16px;
 }
 
@@ -135,9 +133,7 @@ button.gradient {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: auto;
-  padding-left: 200px;
-  padding-right: 16px;
+  flex: 1;
 }
 
 .middle-nav-bar .search-field {
@@ -521,6 +517,11 @@ ul.bulletless li a.selected {
 
 .pt-16 {
   padding-top: 16px;
+}
+
+.plr-16 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .mb-8 {
