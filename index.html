@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style/index.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
     $(document).ready(() => {
@@ -107,6 +107,11 @@
 <body>
   <!-- NAVBAR -->
   <section #nav-bar class="nav-bar mobile-hidden">
+    <!-- <div class="container-nav">
+    
+    </div> -->
+
+    <img class="lidl-icon-desktop" src="icons/lidl-icon.png" alt="prospekte" height="100" width="100">
     <div class="top-nav-bar">
       <div class="container-nav d-flex justify-content-between">
         <div><span>lidl-reisen.de</span></div>
@@ -198,6 +203,25 @@
       <div class="level-item selected">
         <img src="icons/chevron-right.svg" alt="search" height="8" width="8"/>
         <a> Level 5</a>
+      </div>
+    </div>
+  </section>
+  <section #nav-bar class="nav-bar desktop-hidden">
+    <div class="mobile-nav-bar">
+      <img class="lidl-icon-mobile" src="icons/lidl-icon.png" alt="prospekte" height="36" width="36">
+      <div class="mobile-nav-bar-icon-wrapper">
+        <a class="image-action mobile-nav-bar-icon">
+          <img style="position: relative; left: 4px; bottom: 3px;" src="icons/search.svg" alt="search" height="32" width="32">
+        </a>
+        <a class="image-action mobile-nav-bar-icon">
+          <img src="icons/lidl.png" alt="prospekte" height="24" width="24">
+        </a>
+        <a class="image-action mobile-nav-bar-icon">
+          <img src="icons/newsletter.png" alt="prospekte" height="24" width="24">
+        </a>
+        <a class="image-action mobile-nav-bar-icon">
+          <img style="position: relative; bottom: -4px;" src="icons/burger-icon.png" alt="prospekte" height="16" width="22">
+        </a>
       </div>
     </div>
   </section>

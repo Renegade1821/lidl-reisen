@@ -88,12 +88,42 @@ button.gradient {
   background-color: var(--color-basic-white);
 }
 
+.lidl-icon-desktop {
+  position: absolute;
+  top: 8px;
+  padding-left: calc(32px + ((100vw - 32px - 1280px) / 2));
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.15);
+}
+
+.lidl-icon-mobile {
+  padding: 8px;
+}
+
+.mobile-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.15);
+}
+
+.mobile-nav-bar-icon-wrapper {
+  display: flex;
+  padding-right: 12px;
+}
+
+.mobile-nav-bar-icon {
+  padding-top: 12px;
+  padding-left: 20px !important;
+}
+
 .top-nav-bar {
   height: 32px;
   display: flex;
   align-items: center;
   background-color: var(--color-grayscale-base);
   color: var(--color-basic-white);
+  padding-left: 200px;
+  padding-right: 16px;
 }
 
 .top-nav-bar .nav-item {
@@ -105,6 +135,9 @@ button.gradient {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: auto;
+  padding-left: 200px;
+  padding-right: 16px;
 }
 
 .middle-nav-bar .search-field {
@@ -131,7 +164,9 @@ button.gradient {
 }
 
 .bottom-nav-bar {
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,.15)
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.15);
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 ul.bulletless {
@@ -482,6 +517,10 @@ ul.bulletless li a.selected {
 
 .pt-8 {
   padding-top: 8px;
+}
+
+.pt-16 {
+  padding-top: 16px;
 }
 
 .mb-8 {
